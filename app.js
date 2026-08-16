@@ -18,6 +18,7 @@ const PORT = 3000;
 // CONFIGURATION
 
 app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
 
 
 // MIDDLEWARE
