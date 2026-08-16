@@ -207,8 +207,12 @@ app.post("/admin/notices/delete/:id", isAuthenticated, async function(req, res) 
 
 
 // SERVER
-app.listen(PORT, function() {
+if (process.env.NODE_ENV !== "production") {
 
-    console.log(`Server running on http://localhost:${PORT}`);
+    app.listen(PORT, function() {
+        console.log(`Server running on http://localhost:${PORT}`);
+    });
 
-});
+}
+
+module.exports = app;
