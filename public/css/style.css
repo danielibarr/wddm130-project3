@@ -1,0 +1,175 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #222;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    max-width: 400px;
+    background-color: #222;
+    border-radius: 12px 12px 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Card */
+
+main {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px 25px;
+    min-height: 500px;
+    text-align: center;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+}
+
+
+/* Notices */
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    line-height: 1.5;
+}
+
+small {
+    color: #666;
+}
+
+
+/* Forms */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px auto 0;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+.error-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+
+}
+
+header,
+main,
+footer {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+
+@media (max-width: 440px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    main {
+        padding: 25px 20px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+}
